@@ -1,0 +1,19 @@
+﻿<Window x:Class="Bin2Dec.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bin2Dec"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Binary to Dec converter" FontSize="32" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0"/>
+        <TextBlock Text="Type your binary digit below" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,150,0,0"/>
+
+        <TextBox Name="textInput" Width="200" Height="30" HorizontalAlignment="Center" TextAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextInput_TextChanged" />
+
+        <TextBlock Text="Your decimal number is:" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,250,0,0"/>
+
+        <TextBlock Name="liveText" FontSize="16" HorizontalAlignment="Center" Margin="0,300,0,85" />
+    </Grid>
+</Window>
